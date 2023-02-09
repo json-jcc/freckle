@@ -342,6 +342,7 @@
     <ClInclude Include="source\embedded\python\pvm.h" />
     <ClInclude Include="source\embedded\reflection\runtime_core.h" />
     <ClInclude Include="source\public\lua.h" />
+    <ClInclude Include="source\public\platforms.h" />
     <ClInclude Include="source\public\python.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

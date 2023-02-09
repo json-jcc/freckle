@@ -7,24 +7,17 @@
 
 int main()
 {
-
-    python_vm pvm;
+    /*python_vm pvm;
     pvm.preload.push_back("print(\" hello world !\")");
-    pvm.initialize();
-
+    pvm.initialize();*/
 
     lua_vm lvm;
-
     lvm.preload_files = {
-        //"G:\\freckle\\freckle\\freckle\\scripts\\lua\\Main.lua",
-        "G:\\freckle\\freckle\\freckle\\scripts\\lua\\Main.lua"
+        "scripts\\lua\\Main.lua"
     };
 
     lvm.init();
     lvm.tick();
-
-    
-
 
 }
 

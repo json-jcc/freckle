@@ -1,4 +1,5 @@
 #include "lvm.h"
+#include "public/platforms.h"
 
 std::vector<lua_exporter*> lua_vm::type_exporters_ = {};
 std::vector<lua_lib*> lua_vm::libs_ = {};
@@ -24,10 +25,12 @@ bool lua_vm::init() noexcept
 	}
 	
 	load_modules();
-	
+
+	const std::string root_path = platforms::get_root_path();
+
 	for(const auto& preload_file : preload_files)
 	{
-		do_file(preload_file);
+		do_file(root_path + preload_file);
 	}
 	
 	return true;

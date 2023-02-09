@@ -1,4 +1,5 @@
-#pragma once
+#ifndef H_LVM_H
+#define H_LVM_H
 
 #include "lua_api.h"
 
@@ -271,3 +272,5 @@ lua_api::lua_vm::register_class(#NAME, functions);\
 ~NAME##_exporter() = default;\
 };\
 NAME##_exporter NAME##_exporter::instance;
+
+#endif

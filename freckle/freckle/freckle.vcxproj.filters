@@ -647,5 +647,8 @@
     <ClInclude Include="dependencies\py\include\weakrefobject.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="source\public\platforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

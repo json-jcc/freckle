@@ -1,9 +1,18 @@
 #include "pvm.h"
+#include "public/platforms.h"
 #include "public/python.h"
 
 python_vm::python_vm()
 {
-	Py_Initialize();
+    PyConfig config;
+	
+	std::string home;
+
+    PyConfig_InitPythonConfig(&config);
+    config.isolated = 1;
+	//config.home = home.c_str();
+
+    Py_InitializeFromConfig(&config);
 }
 
 python_vm::~python_vm()
@@ -29,11 +38,6 @@ PyMethodDef methods[] =
 
 bool python_vm::initialize() noexcept
 {
-
-	PyObject* the_module = PyImport_AddModule("wr");
-	PyModule_AddFunctions(the_module, methods);
-	PyModule_AddObject(the_module, "wr", nullptr);
-	PyModule_AddObject(the_module, "wr", nullptr);
 
 	for (const auto& text : preload)
 	{
