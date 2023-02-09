@@ -2,18 +2,22 @@
 #define PVM_H
 
 #include <iostream>
+#include <vector>
+#include <string>
 
 class python_vm
 {
 public:
 
+	python_vm();
+
+	~python_vm();
+
 	bool initialize()  noexcept;
 
-	void run() noexcept;
+	void tick() noexcept;
 
-public:
-
-	void notify_to_exit() noexcept;
+	std::vector<std::string> preload;
 
 private:
 

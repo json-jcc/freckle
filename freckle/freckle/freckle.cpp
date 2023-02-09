@@ -9,7 +9,9 @@ int main()
 {
 
     python_vm pvm;
+    pvm.preload.push_back("print(\" hello world !\")");
     pvm.initialize();
+
 
     lua_vm lvm;
 

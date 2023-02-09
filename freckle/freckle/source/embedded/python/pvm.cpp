@@ -1,27 +1,48 @@
 #include "pvm.h"
 #include "public/python.h"
 
-bool python_vm::initialize() noexcept
+python_vm::python_vm()
 {
 	Py_Initialize();
-	PyRun_SimpleString("print(\"helloworld\")");
+}
+
+python_vm::~python_vm()
+{
 	Py_Finalize();
-	
+}
+
+PyObject* Func(PyObject* self, PyObject* args)
+{
+	int arg;
+
+	PyArg_ParseTuple(self, "i", &arg);
+
+	//int ret = DoFun(arg);
+
+	return Py_BuildValue("i", 1);
+}
+
+PyMethodDef methods[] =
+{
+	{}
+};
+
+bool python_vm::initialize() noexcept
+{
+
+	PyObject* the_module = PyImport_AddModule("wr");
+	PyModule_AddFunctions(the_module, methods);
+	PyModule_AddObject(the_module, "wr", nullptr);
+	PyModule_AddObject(the_module, "wr", nullptr);
+
+	for (const auto& text : preload)
+	{
+		PyRun_SimpleString(text.c_str());
+	}
+
 	return true;
 }
 
-void python_vm::run() noexcept
+void python_vm::tick() noexcept
 {
-	std::cout << "Python virtual machine is running." << std::endl;
-
-	while (!_should_exit)
-	{
-
-	}
-	std::cout << "Python virtual machine has exited." << std::endl;
-}
-
-void python_vm::notify_to_exit() noexcept
-{
-	_should_exit = true;
 }
