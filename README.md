@@ -1,2 +1,7 @@
 # freckle
-cpp-lua solution, built by cpp20
+cpp-script solution, supports :
++ lua
++ python
+
+built by cpp20
+
