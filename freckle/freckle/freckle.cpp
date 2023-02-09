@@ -3,9 +3,13 @@
 
 #include <iostream>
 #include <embedded/lua/lvm.h>
+#include <embedded/python/pvm.h>
 
 int main()
 {
+
+    python_vm pvm;
+    pvm.initialize();
 
     lua_vm lvm;
 
@@ -17,6 +21,7 @@ int main()
     lvm.init();
     lvm.tick();
 
+    
 
 
 }

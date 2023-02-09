@@ -3,32 +3,23 @@
 
 #include <iostream>
 
-namespace python_api
+class python_vm
 {
-	namespace basic
-	{
+public:
 
-	}
+	bool initialize()  noexcept;
 
-	class python_vm
-	{
-	public:
+	void run() noexcept;
 
-		bool initialize()  noexcept;
+public:
 
-		void run() noexcept;
+	void notify_to_exit() noexcept;
 
-	public:
+private:
 
-		void notify_to_exit() noexcept;
+	std::atomic_bool _should_exit = false;
 
-	private:
-
-		std::atomic_bool _should_exit = false;
-
-	};
-
-}
+};
 
 
 #endif
