@@ -36,6 +36,15 @@
     <ClCompile Include="source\embedded\python\pvm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="source\embedded\python_example\buket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\embedded\python_example\buket_python.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="source\embedded\ruby\rvm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\embedded\lua\lua_api.h">
@@ -69,9 +78,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source\embedded\python\pvm.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="source\embedded\reflection\runtime_core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source\public\lua.h">
@@ -648,6 +654,600 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="source\public\platforms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\embedded\python_example\buket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\public\ruby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\embedded\ruby\rvm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\assume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\attributes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\bool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\gcc_version_since.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\inttypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\limits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\long_long.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\r_cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\rmodule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\stdalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\2\stdarg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward\cxxanyargs.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\fiber\scheduler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\char.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\double.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\fixnum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\gid_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\int.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\intptr_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\long.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\long_long.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\mode_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\off_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\pid_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\short.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\size_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\st_data_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic\uid_t.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\alloc_size.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\artificial.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\cold.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\const.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\constexpr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\deprecated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\diagnose_if.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\enum_extensibility.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\flag_enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\forceinline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\maybe_unused.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\noalias.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\nodiscard.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\noexcept.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\noinline.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\nonnull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\noreturn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\pure.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\restrict.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\returns_nonnull.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\attr\weakref.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\apple.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\clang.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\intel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\msvc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is\sunpro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rarray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rbasic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rbignum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rclass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rfile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rhash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rmatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\robject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rregexp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rstring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rstruct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core\rtypeddata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\coderange.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\ctype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\pathname.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\re.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\sprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\symbol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\encoding\transcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\builtin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\c_attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\cpp_attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\declspec_attribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\extension.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\feature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\has\warning.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\select\largesize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\select\posix.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\select\win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\bignum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\class.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\compar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\complex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\cont.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\dir.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\enum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\enumerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\eval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\file.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\gc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\hash.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\load.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\marshal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\numeric.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\parse.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\proc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\process.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\range.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\rational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\re.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\ruby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\select.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\signal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\sprintf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\intern\vm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\anyargs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\arithmetic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\assume.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_is.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\compiler_since.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\constant_p.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\core.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\ctype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\dllexport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\dosish.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\error.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\eval.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\event.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\fl_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\gc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\glob.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\interpreter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\iterator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\method.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\newobj.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\rgengc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\scan_args.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\special_consts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\static_assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\stdalign.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\stdbool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\symbol.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\value_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\variable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\warning_push.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\internal\xmalloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\io\buffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\assert.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\backward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\defines.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\digest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\intern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\memory_view.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\missing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\onigmo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\oniguruma.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\ractor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\random.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\re.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\ruby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\st.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\subst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\thread_native.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\vm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby\win32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\x64-mingw-ucrt\ruby\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\x64-mingw-ucrt\rb_mjit_min_header-3.1.3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dependencies\ruby31\include\ruby-3.1.0\ruby.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source\embedded\js\jsvm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -27,7 +27,7 @@ namespace platforms
         TCHAR szBuf[_MAX_PATH];
         GetModuleFileName(NULL, szBuf, 256);
         std::string exePath = TCHAR_to_string(szBuf);
-        int pos = exePath.find_last_of("64", exePath.length());
+        auto pos = exePath.find_last_of("64", exePath.length());
         return exePath.substr(0, pos - 2) + "freckle\\";
 #endif
         return {};
