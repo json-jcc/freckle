@@ -28,9 +28,9 @@ bool lua_vm::init() noexcept
 
 	const std::string root_path = platforms::get_root_path();
 
-	for(const auto& preload_file : preload_files)
+	for(const auto& trunk : preload_trunks)
 	{
-		do_file(root_path + preload_file);
+		do_file(root_path + trunk);
 	}
 	
 	return true;

@@ -48,7 +48,7 @@ private:
 
 public:
 
-    std::vector<std::string> preload_files;
+    std::vector<std::string> preload_trunks;
     
     bool init() noexcept;
 	
